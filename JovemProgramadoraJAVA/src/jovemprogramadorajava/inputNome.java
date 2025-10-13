@@ -16,8 +16,7 @@ public class inputNome {
         idade = scan.nextInt();
         
         System.out.println("Seu nome eh " + nome.toUpperCase() + " e sua idade eh " + idade);
-        System.out.println(nome + " " + sobrenome);
     
     
-    
+    }
 }
