@@ -27,7 +27,7 @@ public class imc {
         imc = peso / (altura * altura); 
          
         System.out.println("Seu imc calculado eh: " + imc);
-        if (sexo == 'M' || sexo == 'm') {
+        if (sexo == 'H' || sexo == 'h') {
             
             if(imc > 39.0){
                 System.out.println("SEU INDICE EH OBESIDADE MORBIDA");
@@ -36,6 +36,18 @@ public class imc {
             } else if(imc >= 25 && imc <= 29.9) {
                 System.out.println("SEU INDICE EH OBESIDADE LEVE");
             } else if(imc >= 20 && imc <= 24.9) {
+                System.out.println("SEU INDICE EH NORMAL");
+            } else {
+                System.out.println("SEU INDICE EH ABAIXO DO NORMAL");
+            }
+        } else {
+            if(imc > 38.9){
+                System.out.println("SEU INDICE EH OBESIDADE MORBIDA");
+            } else if(imc >= 29 && imc <= 38.9) {
+                System.out.println("SEU INDICE EH OBESIDADE MODERADA");
+            } else if(imc >= 24 && imc <= 28.9) {
+                System.out.println("SEU INDICE EH OBESIDADE LEVE");
+            } else if(imc >= 19 && imc <= 23.9) {
                 System.out.println("SEU INDICE EH NORMAL");
             } else {
                 System.out.println("SEU INDICE EH ABAIXO DO NORMAL");
