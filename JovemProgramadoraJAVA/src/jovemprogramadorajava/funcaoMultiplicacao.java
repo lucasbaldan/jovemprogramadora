@@ -15,17 +15,27 @@ public class funcaoMultiplicacao {
         System.out.println("DIGITE O PRIMEIRO NUMERO A SER MULTIPLICADO");
         numero1 = scan.nextInt();
         
+        
+        
         System.out.println("DIGITE O SEGUNDO NUMERO A SER MULTIPLICADO");
         numero2 = scan.nextInt();
         
         multiplicao = multiplicaDoisNumeros(numero1, numero2);
         System.out.println("Resultado da multiplicacao: " + multiplicao);
-    }
-       
+        
+        encerraSistema();
+        
+    }  
 
     public static int multiplicaDoisNumeros(int num1, int num2){
      
     return num1 * num2;
     }
+    
+    public static void encerraSistema(){
+        System.err.println("SEU SISTEMA FOI ENCERRADO");
+        System.exit(0);
+    }
+    
 
 }   
